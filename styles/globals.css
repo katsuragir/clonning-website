@@ -2,8 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Kanit, sans-serif;
+  background-color: rgb(250, 249, 250);
+  line-height: 1;
+  font-size: 16px;
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  border-radius: 10px;
 }
 
 a {
@@ -13,4 +17,268 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: Kanit, sans-serif;
+}
+
+.frZDJR {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: top 0.2s ease 0s;
+  height: 126px;
+  width: 100%;
+  z-index: 20;
+}
+
+.iwcyH {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: top 0.2s ease 0s;
+  height: 56px;
+  width: 100%;
+  z-index: 20;
+}
+
+.fdCbCG {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(231, 227, 235);
+  transform: translate3d(0px, 0px, 0px);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.jcNvwq {
+  display: flex;
+}
+
+.jBMErC {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.jBMErC .mobile-icon {
+  width: 32px;
+}
+
+.jBMErC .desktop-icon {
+  width: 160px;
+  display: none;
+}
+
+.kDWlca {
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+}
+
+.fpWLwd {
+  margin-left: 24px;
+}
+
+.fkzWDK {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.itZnGa {
+  position: relative;
+}
+
+.gOgeXN {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 16px;
+  height: 48px;
+}
+
+.togOu {
+  display: flex;
+  -webkit-box-align: center;
+  text-align: center;
+  align-items: center;
+}
+
+.gbsSVA {
+  height: 100%;
+}
+
+.hwtEBz {
+  margin-right: 16px;
+}
+
+.bYgUJS {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bYgUJS svg {
+  transition: transform 0.3s ease 0s;
+}
+
+.crMNLM {
+  align-self: center;
+  fill: rgb(40, 13, 95);
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.cLIAJn {
+  margin-top: 4px;
+}
+
+.iehvjW {
+  position: relative;
+}
+
+.tSBKF {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+}
+
+.kgqJZu {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.fEDxD {
+  position: relative;
+  display: flex;
+}
+
+.eOXxgx {
+  margin-top: 57px;
+}
+
+.gxdqsh {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  transition: margin-top 0.2s ease 0s,
+    margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transform: translate3d(0px, 0px, 0px);
+  max-width: 100%;
+}
+
+.gZyAEM {
+  padding-top: 16px;
+}
+
+.dVhZcw {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  padding: 48px 0px;
+}
+
+.fKBiSv {
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+}
+
+.SJrhE {
+  min-height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.jxszLn {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dJqkyv {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+.lnhkkx {
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+}
+
+@media screen and (min-width: 370px) {
+  .jxszLn {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .SJrhE {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 852px) {
+  .gZyAEM {
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .jBMErC .mobile-icon {
+    display: none;
+  }
+  .jBMErC .desktop-icon {
+    display: block;
+  }
+  .SJrhE {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
