@@ -5,7 +5,9 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "eslint:recommended",
+        "next"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -29,6 +31,30 @@
         "react/function-component-definition": [1, {
             "namedComponents": ["function-declaration", "function-expression" , "arrow-function"],
             "unnamedComponents": ["function-expression", "arrow-function"]
-        }]
+        }],
+        "quotes": "off",
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "never",
+            "imports": "never",
+            "exports": "never",
+            "functions": "never"
+        }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+         "react/jsx-props-no-spreading": "off",
+         "linebreak-style": "off",
+         "react/jsx-one-expression-per-line": "off",
+         "jsx-a11y/anchor-is-valid": "off",
+         "react/self-closing-comp": "off",
+         "object-curly-spacing": "off"
     }
 }
