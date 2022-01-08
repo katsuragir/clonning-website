@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
           <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
             <a className="sc-gkCoMD jBMErC">
-              <Image src="/logo.svg" width={160} height={26} />
+              <Image src="/logo.svg" width={160} height={26} alt="logo" />
             </a>
           </div>
           <div className="sc-jSFjdj sc-gKAaRy fpWLwd jcNvwq">
@@ -71,6 +71,7 @@ export default function Navbar() {
             <a
               href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
               target="_blank"
+              rel="noreferrer"
               className="sc-giAqHp bYgUJS"
             >
               <img src="/icon1.svg" alt="icon1" className="sc-bdnxRM crMNLM" />
