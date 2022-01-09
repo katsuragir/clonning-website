@@ -6,11 +6,18 @@ export default function Navbar() {
       <nav className="sc-eXuyPJ fdCbCG">
         <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
           <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
-            <a className="sc-gkCoMD jBMErC">
+            <a className="sc-gkCoMD jBMErC logo-large">
               <Image src="/logo.svg" width={160} height={26} alt="logo" />
             </a>
+            <a className="sc-gkCoMD jBMErC logo-mini">
+              <img
+                src="/mini-logo.svg"
+                alt="logo"
+                className="image-logo-mobile"
+              />
+            </a>
           </div>
-          <div className="sc-jSFjdj sc-gKAaRy fpWLwd jcNvwq">
+          <div className="sc-jSFjdj sc-gKAaRy fpWLwd jcNvwq logo-large">
             <div className="sc-jSFjdj fkzWDK">
               <div className="sc-jSFjdj kJmatq">
                 <div className="sc-fuISkM itZnGa">
@@ -67,7 +74,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="sc-jSFjdj sc-gKAaRy togOu">
-          <div className="sc-jSFjdj hwtEBz">
+          <div className="sc-jSFjdj hwtEBz logo-large">
             <a
               href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
               target="_blank"

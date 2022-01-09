@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImageAnimation from "./imageAnimation";
 import TextBanner from "./textBanner";
 
@@ -14,12 +13,7 @@ export default function Banner() {
             >
               <div className="sc-iazTlQ dJqkyv">
                 <div className="sc-eSRwjH lnhkkx">
-                  <Image
-                    src="/icon2.svg"
-                    alt="background"
-                    layout="fill"
-                    objectFit="contain"
-                  />
+                  <img src="/icon2.svg" alt="background" />
                 </div>
               </div>
               <div

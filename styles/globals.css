@@ -271,8 +271,9 @@ a {
 
 .gLmuIw {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
+  color: rgb(118, 69, 217);
 }
 
 .izxulV {
@@ -291,7 +292,7 @@ a {
 
 .kUBYHh {
   color: rgb(40, 13, 95);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -403,6 +404,147 @@ body img {
   align-self: center;
   fill: rgb(122, 110, 170);
   flex-shrink: 0;
+}
+
+.logo-large {
+  display: flex;
+  place-self: center;
+  align-items: center;
+}
+
+.logo-mini {
+  display: none;
+  place-self: center;
+  align-items: center;
+}
+
+.image-logo-mobile {
+  width: 32px;
+}
+
+.kahMgl {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(231, 227, 235);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 20;
+}
+
+.eOHJkb {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hQhHpX {
+  display: inline-flex;
+  position: relative;
+}
+
+.jSDxCO {
+  display: block;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+  height: 44px;
+  padding: 4px 12px;
+}
+
+.cGbKBa {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.boHuaK {
+  position: relative;
+  height: 22px;
+  width: 21px;
+}
+
+.boHuaK div:first-child {
+  height: 22px;
+  width: 21px;
+  z-index: 0;
+}
+
+.boHuaK div:last-child {
+  height: 0px;
+  z-index: 5;
+  transition: height 0.25s ease 0s;
+}
+
+.boHuaK div,
+.boHuaK svg {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.iTdypV {
+  background: rgb(255, 255, 255);
+}
+
+.cSawQi {
+  align-self: center;
+  fill: rgb(122, 110, 170);
+  flex-shrink: 0;
+}
+
+.dubkGi {
+  align-self: center;
+  fill: rgb(118, 69, 217);
+  flex-shrink: 0;
+}
+
+.erAkNO {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  user-select: none;
+}
+
+.gTkcdG {
+  color: rgb(122, 110, 170);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.jbtuJx {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(237, 75, 158);
+}
+
+@media only screen and (max-width: 420px) {
+  .logo-large {
+    display: none;
+  }
+
+  .logo-mini {
+    display: block;
+  }
+
+  .fdCbCG {
+    height: 56px;
+  }
 }
 
 @media screen and (min-width: 370px) {
