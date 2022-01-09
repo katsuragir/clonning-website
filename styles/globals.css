@@ -400,12 +400,6 @@ body img {
   visibility: hidden;
 }
 
-.cSawQi {
-  align-self: center;
-  fill: rgb(122, 110, 170);
-  flex-shrink: 0;
-}
-
 .logo-large {
   display: flex;
   place-self: center;
@@ -662,6 +656,91 @@ body img {
   background-color: rgb(122, 110, 170);
   color: rgb(255, 255, 255);
   width: 100%;
+}
+
+.kvcgdk {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 20px;
+  font-size: 12px;
+  padding: 0px 8px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+}
+
+.iaPfuZ {
+  align-self: center;
+  fill: rgb(122, 110, 170);
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.fAYovO {
+  padding: 0px;
+  width: 32px;
+}
+
+.iLUutT {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  /* padding: 0px 16px; */
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+  margin-right: 8px;
+}
+
+.jRWmGv {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  box-shadow: none;
+  color: rgb(31, 199, 212);
 }
 
 @media screen and (min-width: 370px) {

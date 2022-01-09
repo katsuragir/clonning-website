@@ -52,6 +52,11 @@ export default function TextBanner() {
         >
           Connect Wallet
         </button>
+        <a onClick={handleClickOpen} aria-hidden="true">
+          <button className="sc-hKFxyN jRWmGv" data-scale="md">
+            Trade Now
+          </button>
+        </a>
         <Dialog
           onClose={handleClose}
           aria-labelledby="customized-dialog-title"

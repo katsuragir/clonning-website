@@ -11,7 +11,11 @@ export default function DialogKontent() {
               id="wallet-connect-metamask"
               data-scale="md"
             >
-              <img src="/rubah.svg" className="sc-bdnxRM la-Dshj" alt="rubah" />
+              <img
+                src="/rubah.svg"
+                className="sc-bdnxRM la-Dshj"
+                alt="metamask"
+              />
               <div color="text" className="sc-gtsrHT jFEWVt">
                 Metamask
               </div>

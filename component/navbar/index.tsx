@@ -134,6 +134,29 @@ export default function Navbar() {
               </div>
             </a>
           </div>
+          <div className="sc-jSFjdj cLIAJn">
+            <div className="sc-kLojOw iehvjW">
+              <button className="sc-hKFxyN kvcgdk" data-scale="xs">
+                <img
+                  src="/globe.svg"
+                  alt="bahasa"
+                  className="sc-bdnxRM iaPfuZ"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
+            <button
+              className="sc-hKFxyN fAYovO iLUutT sc-eCApnc"
+              data-scale="sm"
+            >
+              <img
+                src="/setting.svg"
+                alt="setting"
+                className="sc-bdnxRM cSawQi"
+              />
+            </button>
+          </div>
           <button
             className="sc-hKFxyN tSBKF"
             data-scale="sm"
