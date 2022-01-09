@@ -1,15 +1,42 @@
 import Image from "next/image";
+import React from "react";
+import { makeStyles } from "@mui/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import DialogKontent from "../banner/dialogContent";
+import DialogFooter from "../banner/dialogFooter";
+
+// Set the styles
+const useStyles = makeStyles(() => ({
+  modal: {
+    borderRadius: "32px",
+    width: "350px",
+  },
+}));
 
 export default function Navbar() {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="sc-iGkqmO iwcyH">
       <nav className="sc-eXuyPJ fdCbCG">
         <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
           <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
-            <a className="sc-gkCoMD jBMErC logo-large">
+            <a className="sc-gkCoMD jBMErC logo-large" href="/">
               <Image src="/logo.svg" width={160} height={26} alt="logo" />
             </a>
-            <a className="sc-gkCoMD jBMErC logo-mini">
+            <a className="sc-gkCoMD jBMErC logo-mini" href="/">
               <img
                 src="/mini-logo.svg"
                 alt="logo"
@@ -21,7 +48,12 @@ export default function Navbar() {
             <div className="sc-jSFjdj fkzWDK">
               <div className="sc-jSFjdj kJmatq">
                 <div className="sc-fuISkM itZnGa">
-                  <a className="sc-fcmMJX gOgeXN" href="/swap">
+                  <a
+                    className="sc-fcmMJX gOgeXN"
+                    onClick={handleClickOpen}
+                    aria-hidden="true"
+                    style={{ cursor: "pointer" }}
+                  >
                     Trade
                   </a>
                 </div>
@@ -30,7 +62,12 @@ export default function Navbar() {
             <div className="sc-jSFjdj fkzWDK">
               <div className="sc-jSFjdj kJmatq">
                 <div className="sc-fuISkM itZnGa">
-                  <a className="sc-fcmMJX gOgeXN" href="/farms">
+                  <a
+                    className="sc-fcmMJX gOgeXN"
+                    onClick={handleClickOpen}
+                    aria-hidden="true"
+                    style={{ cursor: "pointer" }}
+                  >
                     Earn
                   </a>
                 </div>
@@ -39,7 +76,12 @@ export default function Navbar() {
             <div className="sc-jSFjdj fkzWDK">
               <div className="sc-jSFjdj kJmatq">
                 <div className="sc-fuISkM itZnGa">
-                  <a className="sc-fcmMJX gOgeXN" href="/prediction">
+                  <a
+                    className="sc-fcmMJX gOgeXN"
+                    onClick={handleClickOpen}
+                    aria-hidden="true"
+                    style={{ cursor: "pointer" }}
+                  >
                     Win
                   </a>
                 </div>
@@ -48,7 +90,12 @@ export default function Navbar() {
             <div className="sc-jSFjdj fkzWDK">
               <div className="sc-jSFjdj kJmatq">
                 <div className="sc-fuISkM itZnGa">
-                  <a className="sc-fcmMJX gOgeXN" href="/nfts">
+                  <a
+                    className="sc-fcmMJX gOgeXN"
+                    onClick={handleClickOpen}
+                    aria-hidden="true"
+                    style={{ cursor: "pointer" }}
+                  >
                     NFT
                   </a>
                 </div>
@@ -87,9 +134,56 @@ export default function Navbar() {
               </div>
             </a>
           </div>
-          <button className="sc-hKFxyN tSBKF" data-scale="sm">
+          <button
+            className="sc-hKFxyN tSBKF"
+            data-scale="sm"
+            onClick={handleClickOpen}
+          >
             Connect Wallet
           </button>
+          <Dialog
+            onClose={handleClose}
+            aria-labelledby="customized-dialog-title"
+            open={open}
+            classes={{
+              paper: classes.modal,
+            }}
+          >
+            <DialogTitle
+              id="customized-dialog-title"
+              style={{
+                background: `linear-gradient(
+      139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%)`,
+                fontWeight: "Bold",
+              }}
+            >
+              <IconButton
+                aria-label="close"
+                onClick={handleClose}
+                sx={{
+                  position: "absolute",
+                  right: 8,
+                  top: 8,
+                  color: `rgb(31, 199, 212)`,
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
+              Connect Wallet
+            </DialogTitle>
+            <DialogContent dividers>
+              <DialogKontent />
+            </DialogContent>
+            <DialogActions
+              style={{
+                alignSelf: "center",
+                justifyContent: "center",
+                placeContent: "center",
+              }}
+            >
+              <DialogFooter />
+            </DialogActions>
+          </Dialog>
         </div>
       </nav>
     </div>
