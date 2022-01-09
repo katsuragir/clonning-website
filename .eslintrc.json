@@ -33,13 +33,7 @@
             "unnamedComponents": ["function-expression", "arrow-function"]
         }],
         "quotes": "off",
-        "comma-dangle": ["error", {
-            "arrays": "never",
-            "objects": "never",
-            "imports": "never",
-            "exports": "never",
-            "functions": "never"
-        }],
+        "comma-dangle": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
@@ -56,6 +50,7 @@
          "jsx-a11y/anchor-is-valid": "off",
          "react/self-closing-comp": "off",
          "object-curly-spacing": "off",
-         "react/button-has-type": "off"
+         "react/button-has-type": "off",
+         "react/jsx-curly-brace-presence": "off"
     }
 }

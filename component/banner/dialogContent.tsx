@@ -1,0 +1,58 @@
+export default function DialogKontent() {
+  return (
+    <div className="sc-jSFjdj sc-kmIPcE fjlkFN jQRDBA">
+      <div className="sc-jSFjdj sc-kEqXSa kJmatq kakrcD">
+        <div className="sc-jSFjdj kJmatq">
+          <button
+            className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
+            id="wallet-connect-metamask"
+            data-scale="md"
+          >
+            <img src="/rubah.svg" className="sc-bdnxRM la-Dshj" alt="rubah" />
+            <div color="text" className="sc-gtsrHT jFEWVt">
+              Metamask
+            </div>
+          </button>
+        </div>
+        <div className="sc-jSFjdj kJmatq">
+          <button
+            className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
+            id="wallet-connect-walletconnect"
+            data-scale="md"
+          >
+            <img
+              src="/wallet.svg"
+              className="sc-bdnxRM la-Dshj"
+              alt="wallet connect"
+            />
+            <div color="text" className="sc-gtsrHT jFEWVt">
+              WalletConnect
+            </div>
+          </button>
+        </div>
+        <div className="sc-jSFjdj kJmatq">
+          <button
+            className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
+            id="wallet-connect-trust wallet"
+            data-scale="md"
+          >
+            <img
+              src="/trust.svg"
+              className="sc-bdnxRM la-Dshj"
+              alt="trust Wallet"
+            />
+            <div color="text" className="sc-gtsrHT jFEWVt">
+              Trust Wallet
+            </div>
+          </button>
+        </div>
+        <button className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO" data-scale="md">
+          <img src="/more.svg" className="sc-bdnxRM hA-DcEf" alt="more" />
+          <div color="text" className="sc-gtsrHT jFEWVt">
+            More
+          </div>
+        </button>
+      </div>
+    </div>
+  );
+}
