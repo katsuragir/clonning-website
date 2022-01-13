@@ -12,19 +12,32 @@ import Switch from "@mui/material/Switch";
 
 export default function Form() {
   const [values, setValues] = React.useState({
-    amount: "",
     password: "",
-    weight: "",
-    weightRange: "",
+    frasa: "",
+    confirm: "",
     showPassword: false,
+    showFrasa: false,
+    showConfirm: false,
   });
   const handleChange = (prop: any) => (event: any) => {
     setValues({ ...values, [prop]: event.target.value });
+  };
+  const handleClickShowFrasa = () => {
+    setValues({
+      ...values,
+      showFrasa: !values.showFrasa,
+    });
   };
   const handleClickShowPassword = () => {
     setValues({
       ...values,
       showPassword: !values.showPassword,
+    });
+  };
+  const handleClickShowConfirm = () => {
+    setValues({
+      ...values,
+      showConfirm: !values.showConfirm,
     });
   };
 
@@ -43,22 +56,22 @@ export default function Form() {
         <OutlinedInput
           id="frasa-pemulihan-rahasia"
           placeholder="Masukan Frasa Pemulihan Rahasia"
-          type={values.showPassword ? "text" : "password"}
-          value={values.password}
-          onChange={handleChange("password")}
+          type={values.showFrasa ? "text" : "password"}
+          value={values.frasa}
+          onChange={handleChange("frasa")}
           endAdornment={
             <InputAdornment position="end">
               <IconButton
-                aria-label="toggle password visibility"
-                onClick={handleClickShowPassword}
+                aria-label="toggle frasa visibility"
+                onClick={handleClickShowFrasa}
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
-                {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                {values.showFrasa ? <VisibilityOff /> : <Visibility />}
               </IconButton>
             </InputAdornment>
           }
-          label="Password"
+          label="Frasa"
         />
       </FormControl>
       <FormControl
@@ -99,22 +112,22 @@ export default function Form() {
         <OutlinedInput
           id="konfirmasi-kata-sandi"
           placeholder="Masukan Konfirmasi Kata Sandi"
-          type={values.showPassword ? "text" : "password"}
-          value={values.password}
-          onChange={handleChange("password")}
+          type={values.showConfirm ? "text" : "password"}
+          value={values.confirm}
+          onChange={handleChange("confirm")}
           endAdornment={
             <InputAdornment position="end">
               <IconButton
-                aria-label="toggle password visibility"
-                onClick={handleClickShowPassword}
+                aria-label="toggle confirm visibility"
+                onClick={handleClickShowConfirm}
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
-                {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                {values.showConfirm ? <VisibilityOff /> : <Visibility />}
               </IconButton>
             </InputAdornment>
           }
-          label="Password"
+          label="Confirm"
         />
         <FormHelperText id="standard-weight-helper-text">
           harus Sekurangnya 8 karakter
