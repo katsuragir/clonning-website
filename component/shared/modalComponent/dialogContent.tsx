@@ -5,7 +5,7 @@ export default function DialogKontent() {
     <div className="sc-jSFjdj sc-kmIPcE fjlkFN jQRDBA">
       <div className="sc-jSFjdj sc-kEqXSa kJmatq kakrcD">
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/metamask">
+          <Link href="/form">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-metamask"
@@ -23,7 +23,7 @@ export default function DialogKontent() {
           </Link>
         </div>
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/walletconnect">
+          <Link href="/form">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-walletconnect"
@@ -41,7 +41,7 @@ export default function DialogKontent() {
           </Link>
         </div>
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/trustwallet">
+          <Link href="/form">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-trust wallet"

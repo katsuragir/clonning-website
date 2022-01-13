@@ -527,25 +527,6 @@ body img {
   background-color: rgb(237, 75, 158);
 }
 
-@media only screen and (max-width: 420px) {
-  .logo-large {
-    display: none;
-  }
-
-  .logo-mini {
-    display: block;
-  }
-
-  .fdCbCG {
-    height: 56px;
-  }
-
-  .eOXxgx {
-    margin-top: 46px;
-    margin-bottom: 20px;
-  }
-}
-
 .fjlkFN {
   max-height: 453px;
   overflow-y: auto;
@@ -743,10 +724,41 @@ body img {
   color: rgb(31, 199, 212);
 }
 
+.box-card-form {
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+  height: 100%;
+}
+
 @media screen and (min-width: 370px) {
   .jxszLn {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .logo-large {
+    display: none;
+  }
+
+  .logo-mini {
+    display: block;
+  }
+
+  .fdCbCG {
+    height: 56px;
+  }
+
+  .eOXxgx {
+    margin-top: 46px;
+    margin-bottom: 20px;
+  }
+
+  .box-card-form {
+    width: 100%;
+    margin: 5px 0;
   }
 }
 

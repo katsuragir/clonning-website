@@ -1,6 +1,6 @@
-import Banner from "../component/banner";
-import Navbar from "../component/navbar";
-import Mobile from "../component/navbar/mobile";
+import Banner from "../component/Layout/banner";
+import Navbar from "../component/Layout/navbar";
+import Mobile from "../component/Layout/navbar/mobile";
 
 export default function Home() {
   return (

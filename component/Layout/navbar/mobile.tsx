@@ -1,31 +1,11 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
-import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import DialogKontent from "../banner/dialogContent";
-import DialogFooter from "../banner/dialogFooter";
-
-// Set the styles
-const useStyles = makeStyles(() => ({
-  modal: {
-    borderRadius: "32px",
-    width: "350px",
-  },
-}));
+import DialogCoinComponent from "../../shared/modalComponent/dialog";
 
 export default function Mobile() {
-  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
   };
   return (
     <div className="sc-jSFjdj sc-gKAaRy sc-EZqKI kJmatq eOHJkb kahMgl">
@@ -73,7 +53,11 @@ export default function Mobile() {
                 <div className="sc-jSFjdj sc-gKAaRy gbsSVA cGbKBa">
                   <div className="sc-jHcXXw boHuaK">
                     <div className="sc-dWBRfb iTdypV">
-                      <img src="/icon5.svg" className="sc-bdnxRM cSawQi" />
+                      <img
+                        src="/icon5.svg"
+                        className="sc-bdnxRM cSawQi"
+                        alt=""
+                      />
                     </div>
                     <div className="sc-dWBRfb iTdypV">
                       <img src="/icon6.svg" className="sc-bdnxRM dubkGi" />
@@ -178,49 +162,7 @@ export default function Mobile() {
           </div>
         </div>
       </div>
-      <Dialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
-        classes={{
-          paper: classes.modal,
-        }}
-      >
-        <DialogTitle
-          id="customized-dialog-title"
-          style={{
-            background: `linear-gradient(
-      139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%)`,
-            fontWeight: "Bold",
-          }}
-        >
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            sx={{
-              position: "absolute",
-              right: 8,
-              top: 8,
-              color: `rgb(31, 199, 212)`,
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-          Connect Wallet
-        </DialogTitle>
-        <DialogContent dividers>
-          <DialogKontent />
-        </DialogContent>
-        <DialogActions
-          style={{
-            alignSelf: "center",
-            justifyContent: "center",
-            placeContent: "center",
-          }}
-        >
-          <DialogFooter />
-        </DialogActions>
-      </Dialog>
+      <DialogCoinComponent open={open} setOpen={setOpen} />
     </div>
   );
 }
