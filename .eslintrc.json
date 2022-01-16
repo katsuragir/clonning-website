@@ -1,59 +1,69 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "eslint:recommended",
+    "next"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "eslint:recommended",
-        "next"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      1,
+      {
+        "namedComponents": [
+          "function-declaration",
+          "function-expression",
+          "arrow-function"
+        ],
+        "unnamedComponents": ["function-expression", "arrow-function"]
+      }
     ],
-    "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-        "react/react-in-jsx-scope": "off",
-        "react/function-component-definition": [1, {
-            "namedComponents": ["function-declaration", "function-expression" , "arrow-function"],
-            "unnamedComponents": ["function-expression", "arrow-function"]
-        }],
-        "quotes": "off",
-        "comma-dangle": "off",
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-              "js": "never",
-              "jsx": "never",
-              "ts": "never",
-              "tsx": "never"
-            }
-         ],
-         "react/jsx-props-no-spreading": "off",
-         "linebreak-style": "off",
-         "react/jsx-one-expression-per-line": "off",
-         "jsx-a11y/anchor-is-valid": "off",
-         "react/self-closing-comp": "off",
-         "object-curly-spacing": "off",
-         "react/button-has-type": "off",
-         "react/jsx-curly-brace-presence": "off",
-         "import/no-cycle": "off",
-         "react/jsx-fragments": "off",
-         "react/jsx-wrap-multilines": "off"
-    }
+    "quotes": "off",
+    "comma-dangle": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "linebreak-style": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/self-closing-comp": "off",
+    "object-curly-spacing": "off",
+    "react/button-has-type": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "import/no-cycle": "off",
+    "react/jsx-fragments": "off",
+    "react/jsx-wrap-multilines": "off",
+    "treatUndefinedAsUnspecified": "off",
+    "import/prefer-default-export": "off",
+    "operator-linebreak": "off"
+  }
 }
