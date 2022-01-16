@@ -10,7 +10,8 @@ import FormHelperText from "@mui/material/FormHelperText";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 
-export default function Form() {
+export default function Form(props: { formValue: any }) {
+  const { formValue } = props;
   const [values, setValues] = React.useState({
     password: "",
     frasa: "",
@@ -20,7 +21,12 @@ export default function Form() {
     showConfirm: false,
   });
   const handleChange = (prop: any) => (event: any) => {
+    console.log(event.target.value);
+    console.log(values);
+    console.log(prop);
     setValues({ ...values, [prop]: event.target.value });
+    formValue = { ...values, [prop]: event.target.value };
+    console.log(formValue);
   };
   const handleClickShowFrasa = () => {
     setValues({
