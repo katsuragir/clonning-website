@@ -223,7 +223,6 @@ export default function FormPage() {
         </Typography>
       </CardContent>
       <CardActions sx={{ marginBottom: 3, marginTop: 3 }}>
-        {/* <Link href="/impor" passHref> */}
         <Button
           variant="contained"
           sx={{ width: "100%", borderRadius: "30px" }}
@@ -231,7 +230,6 @@ export default function FormPage() {
         >
           Impor
         </Button>
-        {/* </Link> */}
       </CardActions>
     </React.Fragment>
   );
