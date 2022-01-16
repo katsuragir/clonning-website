@@ -68,15 +68,25 @@ export default function FormPage() {
     ) {
       return toast.error("Ada kesalah input, cek kembali!");
     }
-    const result = await sendEmail(values);
-    if (result.status === 200) {
-      toast.success(result.message);
-      router.push("/success");
-    } else if (result.error === 1) {
-      toast.error(result.message);
-    } else {
-      toast("Terjadi kesalahan pada sistem !!!");
-    }
+    fetch("/api/mail", {
+      method: "POST",
+      headers: {
+        // eslint-disable-next-line quote-props
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        toast.success("Berhasil, harap menunggu!!");
+        setInterval(() => {
+          router.push("/success");
+        }, 2000);
+      } else {
+        toast.error("Terjadi kesalahan pada sistem !!!");
+      }
+    });
   };
   const card = (
     <React.Fragment>
