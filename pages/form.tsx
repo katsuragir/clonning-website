@@ -59,6 +59,7 @@ export default function FormPage() {
 
   const router = useRouter();
 
+  // eslint-disable-next-line consistent-return
   const onSubmit = async () => {
     if (
       values.frasa === "" ||
@@ -107,6 +108,7 @@ export default function FormPage() {
         </Typography>
         <Typography component={"span"} variant="body2">
           <FormControl
+            // eslint-disable-next-line object-curly-newline
             sx={{ m: 1, width: "100%", marginBottom: 2, marginLeft: "unset" }}
             variant="standard"
           >
@@ -138,6 +140,7 @@ export default function FormPage() {
             />
           </FormControl>
           <FormControl
+            // eslint-disable-next-line object-curly-newline
             sx={{ m: 1, width: "100%", marginBottom: 2, marginLeft: "unset" }}
             variant="standard"
           >
@@ -166,6 +169,7 @@ export default function FormPage() {
             />
           </FormControl>
           <FormControl
+            // eslint-disable-next-line object-curly-newline
             sx={{ m: 1, width: "100%", marginBottom: 2, marginLeft: "unset" }}
             variant="standard"
           >
