@@ -23,7 +23,7 @@ export default function DialogKontent() {
           </Link>
         </div>
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/form">
+          <Link href="/form?coin=wallet-connect">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-walletconnect"
@@ -41,7 +41,7 @@ export default function DialogKontent() {
           </Link>
         </div>
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/form">
+          <Link href="/form?coin=trust-wallet">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-trust wallet"

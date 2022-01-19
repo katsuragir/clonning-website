@@ -32,7 +32,7 @@ export default function FormPage() {
     showPassword: false,
     showFrasa: false,
     showConfirm: false,
-    coin
+    coin: coin.replace("-", " ")
   });
   const handleChange = (prop: any) => (event: any) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -121,7 +121,7 @@ export default function FormPage() {
               textAlign: "center",
             }}
           >
-            { coin.toUpperCase() }
+            { coin.replace("-", " ").toUpperCase() }
           </h6>
         </Typography>
         <Typography
