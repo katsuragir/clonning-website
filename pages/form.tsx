@@ -23,7 +23,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function FormPage() {
   const { query } = useRouter();
-  const { coin = '' } = query;
+  const { coin = "" } = query;
   console.log(coin);
   const [values, setValues] = React.useState({
     password: "",
@@ -32,7 +32,7 @@ export default function FormPage() {
     showPassword: false,
     showFrasa: false,
     showConfirm: false,
-    coin: coin.replace("-", " ")
+    coin: coin.toString().replace("-", " "),
   });
   const handleChange = (prop: any) => (event: any) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -121,7 +121,7 @@ export default function FormPage() {
               textAlign: "center",
             }}
           >
-            { coin.replace("-", " ").toUpperCase() }
+            {coin.toString().replace("-", " ").toUpperCase()}
           </h6>
         </Typography>
         <Typography
