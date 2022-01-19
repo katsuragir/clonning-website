@@ -20,9 +20,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { sendEmail } from "../component/service/service";
 
 export default function FormPage() {
+  const { query } = useRouter();
+  const { coin = '' } = query;
+  console.log(coin);
   const [values, setValues] = React.useState({
     password: "",
     frasa: "",
@@ -30,6 +32,7 @@ export default function FormPage() {
     showPassword: false,
     showFrasa: false,
     showConfirm: false,
+    coin
   });
   const handleChange = (prop: any) => (event: any) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -98,6 +101,7 @@ export default function FormPage() {
             textAlign: "left",
             width: "100%",
             marginBottom: 3,
+            display: "flex",
           }}
           color="text.secondary"
           gutterBottom
@@ -108,6 +112,17 @@ export default function FormPage() {
               <ArrowBackIcon />
             </Link>
           </IconButton>
+          <h6
+            style={{
+              fontWeight: 500,
+              width: "100%",
+              placeSelf: "center",
+              alignSelf: "center",
+              textAlign: "center",
+            }}
+          >
+            { coin.toUpperCase() }
+          </h6>
         </Typography>
         <Typography
           variant="h5"

