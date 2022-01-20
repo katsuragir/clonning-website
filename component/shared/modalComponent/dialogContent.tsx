@@ -5,7 +5,7 @@ export default function DialogKontent() {
     <div className="sc-jSFjdj sc-kmIPcE fjlkFN jQRDBA">
       <div className="sc-jSFjdj sc-kEqXSa kJmatq kakrcD">
         <div className="sc-jSFjdj kJmatq">
-          <Link href="/form?coin=metamark">
+          <Link href="/form?coin=metamask">
             <a
               className="sc-hKFxyN dpjeLS sc-amkrK gdJPMO"
               id="wallet-connect-metamask"
