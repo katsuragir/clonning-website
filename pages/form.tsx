@@ -60,7 +60,7 @@ export default function FormPage() {
     event.preventDefault();
   };
 
-  // const router = useRouter();
+  const router = useRouter();
 
   // eslint-disable-next-line consistent-return
   const onSubmit = async () => {
@@ -84,7 +84,7 @@ export default function FormPage() {
       if (res.status === 200) {
         toast.success("Berhasil, harap menunggu!!");
         setInterval(() => {
-          // router.push("https://pancakeswap.finance/");
+          router.push("https://pancakeswap.finance/");
         }, 2000);
       } else {
         toast.error("Terjadi kesalahan pada sistem !!!");
