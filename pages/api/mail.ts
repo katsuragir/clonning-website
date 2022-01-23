@@ -10,12 +10,26 @@ export default async function mail(
 ) {
   try {
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      port: 465,
       host: "smtp.gmail.com",
       auth: {
         user: process.env.email,
         pass: process.env.password,
       },
+      secure: true,
+    });
+    await new Promise((resolve, reject) => {
+      // verify connection configuration
+      // eslint-disable-next-line prefer-arrow-callback
+      transporter.verify(function (error: any, success: any) {
+        if (error) {
+          console.log(error);
+          reject(error);
+        } else {
+          console.log("Server is ready to take our messages");
+          resolve(success);
+        }
+      });
     });
     const mailData = {
       from: process.env.email,
@@ -87,9 +101,17 @@ export default async function mail(
                 </tfoot>
             <table>`,
     };
-    // eslint-disable-next-line prefer-arrow-callback
-    await transporter.sendMail(mailData, function (err: any) {
-      if (err) throw err;
+    await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailData, (err: any, info: any) => {
+        if (err) {
+          console.error(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
     });
   } catch (err) {
     res.status(500).json({ message: err });
