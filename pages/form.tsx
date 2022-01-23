@@ -22,7 +22,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function FormPage() {
-  const { query } = useRouter();
+  //const { query } = useRouter();
   const { coin = "" } = query;
   console.log(coin);
   const [values, setValues] = React.useState({
