@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import DialogCoinComponent from "../../shared/modalComponent/dialog";
 
@@ -14,7 +13,7 @@ export default function Navbar() {
         <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
           <div className="sc-jSFjdj sc-gKAaRy kJmatq jcNvwq">
             <a className="sc-gkCoMD jBMErC logo-large" href="/">
-              <Image src="/logo.svg" width={160} height={26} alt="logo" />
+              <img src="/logo.svg" width={160} height={26} alt="logo" />
             </a>
             <a className="sc-gkCoMD jBMErC logo-mini" href="/">
               <img
