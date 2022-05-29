@@ -1,7 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-require("dotenv").config();
-
 const nodemailer = require("nodemailer");
 
 export default async function mail(
